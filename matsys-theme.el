@@ -569,7 +569,7 @@
    `(nxml-tag-slash-face ((,class (:foreground "blue"))))
    `(org-agenda-block-count ((,class (:weight bold :foreground "#A5A5A5"))))
    `(org-agenda-calendar-event ((,class (:weight bold :foreground "#3774CC" :background "#E4EBFE"))))
-   `(org-agenda-calendar-sexp ((,class (:foreground "#777777" :background "#DAEAFC"))))
+   `(org-agenda-calendar-sexp ((,class (:foreground "#327ACD" :background "#F3F7FC"))))
    `(org-agenda-clocking ((,class (:foreground "black" :background "#EEC900"))))
    `(org-agenda-column-dateline ((,class ,column)))
    `(org-agenda-current-time ((,class (:underline t :foreground "#1662AF"))))
