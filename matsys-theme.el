@@ -34,6 +34,23 @@
 
 (let ((class '((class color) (min-colors 89)))
 
+      ;; sampling some color from matsys... maybe?
+      ;; "#a0ae9f"
+      ;; "#9b4536"
+      ;; "#954637"
+      ;; "#8f3831"
+      ;; "#142423"
+      ;; "#2a3e3d"
+      ;; "#415e5c"
+      ;; "#476563"
+      ;; "#6f8959"
+      ;; "#82985a"
+      ;; "#7e9082"
+      ;; "#233a42"
+      ;; "#1f383f"
+      ;; "#452b45"
+      
+
       ;; generic colors.
       (cancel '(:slant italic :strike-through t :foreground "#A9A9A9"))
       (clock-line '(:box (:line-width 1 :color "#335EA8") :foreground "black" :background "#EEC900"))
@@ -56,8 +73,8 @@
       (mail-read '(:foreground "#A9A9A9"))
       (mail-read-high '(:foreground "#808080"))
       (mail-ticked '(:foreground "#E92415"))
-      (mail-to '(:family "Sans Serif" :underline nil :foreground "#006DAF"))
-      (mail-unread '(:foreground "#0067BE" :weight bold))
+      (mail-to '(:family "Input Sans" :underline nil :foreground "#006DAF"))
+      (mail-unread '(:foreground "#0077CC" :weight bold :background "#DDDDDD"))
       (mail-unread-high '(:foreground "#135985"))
       (marked-line '(:foreground "#AA0000" :background "#FFAAAA"))
       (match '(:weight bold :background "#FBE448")) ; occur patterns
@@ -209,7 +226,10 @@
 
    ;; mu4e
    `(mu4e-unread-face ((,class ,mail-unread)))
-   `(mu4e-replied-face ((,class (:foreground "#006699"))))
+   `(mu4e-replied-face ((,class (:foreground "#777777" :slant italic))))
+   `(mu4e-header-key-face ((,class (:family "Input Mono" :foreground "#888888"))))
+   `(mu4e-header-value-face ((,class (:family "Input Mono" :foreground "#000000"))))
+   `(mu4e-contact-face ((,class (:family "Input Mono" :foreground "#006DAF"))))
 
    ;; Message faces.
    `(message-header-name ((,class ,mail-header-name)))
@@ -610,8 +630,8 @@
    `(org-beamer-tag ((,class (:box (:line-width 1 :color "#FABC18") :foreground "#2C2C2C" :background "#FFF8D0"))))
    `(org-block ((,class ,code-block)))
    `(org-block-background ((,class (:background "#FFFFE0"))))
-   `(org-block-begin-line ((,class (:underline "#A7A6AA" :foreground "#555555" :background "#E2E1D5"))))
-   `(org-block-end-line ((,class (:overline "#A7A6AA" :foreground "#555555" :background "#E2E1D5"))))
+   `(org-block-begin-line ((,class (:underline "#A7A6AA" :foreground "#555555" :background "#F2F2F0"))))
+   `(org-block-end-line ((,class (:overline "#A7A6AA" :foreground "#555555" :background "#F2F2F0"))))
    `(org-checkbox ((,class (:weight bold :box (:line-width 1 :style pressed-button) :foreground "#434343" :background "#A3A3A3"))))
    `(org-clock-overlay ((,class (:foreground "white" :background "SkyBlue4"))))
    `(org-code ((,class ,code-inline)))
