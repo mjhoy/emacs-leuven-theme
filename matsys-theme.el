@@ -1,49 +1,17 @@
-;;; leuven-theme.el --- Awesome Emacs color theme on white background
-
-;; Copyright (C) 2003-2015 Free Software Foundation, Inc.
-
-;; Author: Fabrice Niessen <(concat "fniessen" at-sign "pirilampo.org")>
-;; URL: https://github.com/fniessen/emacs-leuven-theme
-;; Version: 20150922.2000
-;; Keywords: color theme
-
-;; This file is part of GNU Emacs.
-
-;; GNU Emacs is free software: you can redistribute it and/or modify
-;; it under the terms of the GNU General Public License as published by
-;; the Free Software Foundation, either version 3 of the License, or
-;; (at your option) any later version.
-
-;; GNU Emacs is distributed in the hope that it will be useful,
-;; but WITHOUT ANY WARRANTY; without even the implied warranty of
-;; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-;; GNU General Public License for more details.
-
-;; You should have received a copy of the GNU General Public License
-;; along with GNU Emacs.  If not, see <http://www.gnu.org/licenses/>.
+;;; matsys-theme.el --- Fork of leuven
 
 ;;; Commentary:
 
-;; This elegant Org-enhancing color theme "leuven" ROCKS!
-;; ... and not just for Org mode.
-;;
-;; To use it, put the following in your Emacs configuration file:
-;;
-;;   (load-theme 'leuven t)
-;;
 ;; Requirements: Emacs 24.
 
 ;;; Code:
 
-(deftheme leuven
-  "Face colors with a light background.
-Basic, Font Lock, Isearch, Gnus, Message, Org mode, Diff, Ediff,
-Flyspell, Semantic, and Ansi-Color faces are included -- and much
-more...")
+(deftheme matsys
+  "mjhoy's fork of leuven...")
 
 (let ((class '((class color) (min-colors 89)))
 
-      ;; Leuven generic colors.
+      ;; generic colors.
       (cancel '(:slant italic :strike-through t :foreground "#A9A9A9"))
       (clock-line '(:box (:line-width 1 :color "#335EA8") :foreground "black" :background "#EEC900"))
       (code-block '(:family "Input Mono" :foreground "#000088" :background "#FFFFE0"))
@@ -91,7 +59,7 @@ more...")
       (vc-branch '(:box (:line-width 1 :color "#00CC33") :foreground "black" :background "#AAFFAA")))
 
   (custom-theme-set-faces
-   'leuven
+   'matsys
    `(default ((,class (:foreground "#333333" :background "#FFFFFF"))))
    `(bold ((,class (:weight bold :foreground "black"))))
    `(bold-italic ((,class (:weight bold :slant italic :foreground "black"))))
@@ -787,7 +755,7 @@ more...")
    `(yas/field-highlight-face ((,class (:background "DarkSeaGreen1"))))
    ))
 
-(custom-theme-set-variables 'leuven
+(custom-theme-set-variables 'matsys
  '(ansi-color-faces-vector
    [default default default italic underline success warning error])
  '(ansi-color-names-vector
@@ -802,14 +770,6 @@ more...")
   (add-to-list 'custom-theme-load-path
                (file-name-as-directory (file-name-directory load-file-name))))
 
-(provide-theme 'leuven)
+(provide-theme 'matsys)
 
-;; This is for the sake of Emacs.
-;; Local Variables:
-;; no-byte-compile: t
-;; time-stamp-end: "$"
-;; time-stamp-format: "%:y%02m%02d.%02H%02M"
-;; time-stamp-start: "Version: "
-;; End:
-
-;;; leuven-theme.el ends here
+;;; matsys-theme.el ends here
