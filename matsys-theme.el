@@ -24,6 +24,9 @@
 
 ;; Requirements: Emacs 24.
 
+;; You may also want to install the Input family of fonts, available
+;; at http://input.fontbureau.com/
+
 ;;; Code:
 
 (deftheme matsys
