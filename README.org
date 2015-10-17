@@ -8,8 +8,9 @@ There will be references to the [[http://input.fontbureau.com/][Input]] font fam
 
 [[./images/matsys.png]]
 
-* matsys?
+* matsys? --A painter from Leuven.
 
 [[./images/Quentin_Matsys_-_A_Grotesque_old_woman.jpg]]
 
-A painter from Leuven.
+/A Grotesque old woman/ by Quentin Matsys (1456/1466–1530) - National
+Gallery, London.  [[https://commons.wikimedia.org/wiki/File:Quentin_Matsys_-_A_Grotesque_old_woman.jpg#/media/File:Quentin_Matsys_-_A_Grotesque_old_woman.jpg][Licensed under Public Domain via Commons]].
