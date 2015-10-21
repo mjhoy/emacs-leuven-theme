@@ -795,6 +795,9 @@
    `(woman-symbol ((,class (:weight bold :foreground "purple"))))
    `(yas/field-debug-face ((,class (:background "ivory2"))))
    `(yas/field-highlight-face ((,class (:background "DarkSeaGreen1"))))
+
+   ;; ace-window
+   `(aw-leading-char-face ((t (:foreground "white" :background "#2C55B1" :family "Input Sans" :height 3.0))))
    ))
 
 (custom-theme-set-variables 'matsys
