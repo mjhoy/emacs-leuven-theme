@@ -49,7 +49,6 @@
       ;; "#233a42"
       ;; "#1f383f"
       ;; "#452b45"
-      
 
       ;; generic colors.
       (cancel '(:slant italic :strike-through t :foreground "#A9A9A9"))
@@ -611,21 +610,21 @@
    `(nxml-tag-delimiter-face ((,class (:foreground "blue"))))
    `(nxml-tag-slash-face ((,class (:foreground "blue"))))
    `(org-agenda-block-count ((,class (:weight bold :foreground "#A5A5A5"))))
-   `(org-agenda-calendar-event ((,class (:weight bold :foreground "#3774CC" :background "#E4EBFE"))))
+   `(org-agenda-calendar-event ((,class (:foreground "#3774CC"))))
    `(org-agenda-calendar-sexp ((,class (:foreground "#327ACD" :background "#F3F7FC"))))
    `(org-agenda-clocking ((,class (:foreground "black" :background "#EEC900"))))
    `(org-agenda-column-dateline ((,class ,column)))
-   `(org-agenda-current-time ((,class (:underline t :foreground "#1662AF"))))
-   `(org-agenda-date ((,class (:height 1.6 :weight bold :foreground "#1662AF"))))
-   `(org-agenda-date-today ((,class (:height 1.6 :weight bold :foreground "#4F4A3D" :background "#FFFFCC"))))
-   `(org-agenda-date-weekend ((,class (:height 1.6 :weight bold :foreground "#4E4E4E"))))
+   `(org-agenda-current-time ((,class (:foreground "##E77D63"))))
+   `(org-agenda-date         ((,class (:foreground "black"))))
+   `(org-agenda-date-today   ((,class (:foreground "#4F4A3D" :background "#FFFFCC"))))
+   `(org-agenda-date-weekend ((,class (:foreground "green4"))))
    `(org-agenda-diary ((,class (:weight bold :foreground "green4" :background "light blue"))))
    `(org-agenda-dimmed-todo-face ((,class (:foreground "gold2"))))
-   `(org-agenda-done ((,class (:foreground "#555555"))))
+   `(org-agenda-done ((,class (:foreground "#aaaaaa" :slant italic))))
    `(org-agenda-filter-category ((,class (:weight bold :foreground "orange"))))
    `(org-agenda-filter-tags ((,class (:weight bold :foreground "orange"))))
    `(org-agenda-restriction-lock ((,class (:background "#E77D63"))))
-   `(org-agenda-structure ((,class (:height 1.6 :weight bold :foreground "#1F8DD6"))))
+   `(org-agenda-structure ((,class (:height 1.3 :family "Input Sans" :foreground "#1F8DD6"))))
    `(org-archived ((,class (:foreground "gray70"))))
    `(org-beamer-tag ((,class (:box (:line-width 1 :color "#FABC18") :foreground "#2C2C2C" :background "#FFF8D0"))))
    `(org-block ((,class ,code-block)))
@@ -643,7 +642,7 @@
    `(org-document-info ((,class (:foreground "#484848"))))
    `(org-document-info-keyword ((,class (:foreground "#008ED1"))))
    `(org-document-title ((,class (:family "Input Serif" :height 1.8 :foreground "black"))))
-   `(org-done ((,class (:weight bold :box (:line-width 1 :color "#BBBBBB") :foreground "#BBBBBB" :background "#F0F0F0"))))
+   `(org-done ((,class (:weight bold :box (:line-width 1 :color "#BBBBBB") :foreground "#BBBBBB" :background "#EAFFEA"))))
    `(org-drawer ((,class (:foreground "light sky blue"))))
    `(org-ellipsis ((,class (:underline nil :box (:line-width 1 :color "#999999") :foreground "#999999" :background "#FFF8C0")))) ; #FFEE62
    `(org-example ((,class (:foreground "blue" :background "#EAFFEA"))))
@@ -672,7 +671,7 @@
    `(org-quote ((,class (:slant italic :foreground "dim gray" :background "#FFFFE0"))))
    `(org-scheduled ((,class (:foreground "#333333"))))
    `(org-scheduled-previously ((,class (:foreground "#565655"))))
-   `(org-scheduled-today ((,class (:weight bold :foreground "#4F4A3D" :background "#FFFFCC"))))
+   `(org-scheduled-today ((,class (:foreground "#4F4A3D" :background "#FFFFCC"))))
    `(org-sexp-date ((,class (:foreground "#3774CC"))))
    `(org-special-keyword ((,class (:weight bold :foreground "#00BB00" :background "#EAFFEA"))))
    `(org-table ((,class (:foreground "dark green" :background "#EAFFEA"))))
