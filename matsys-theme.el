@@ -349,9 +349,9 @@
    `(circe-originator-face ((,class (:foreground "blue"))))
    `(circe-prompt-face ((,class (:foreground "red"))))
    `(circe-server-face ((,class (:foreground "#99CAE5"))))
-   `(comint-highlight-input ((,class (:weight bold :foreground "#0000FF" :inherit nil))))
+   `(comint-highlight-input ((,class (:foreground "#008000" :inherit nil))))
    ;; `(comint-highlight-prompt ((,class (:weight bold :foreground "black" :background "gold"))))
-   `(comint-highlight-prompt ((,class (:weight bold :foreground "#0000FF" :inherit nil))))
+   `(comint-highlight-prompt ((,class (:foreground "#008000" :weight bold :inherit nil))))
 
    `(ac-candidate-face ((,class (:foreground "#5B6367" :background "lightgray")))) ; popup-face
    `(ac-candidate-mouse-face ((,class (:foreground "white" :background "blue")))) ; popup-menu-mouse-face
@@ -370,10 +370,10 @@
    `(compare-windows ((,class (:background "#FFFF00"))))
    ;; `(completions-common-part ((,class (:foreground "red" :weight bold))))
    ;; `(completions-first-difference ((,class (:foreground "green" :weight bold))))
-   `(compilation-error ((,class (:weight bold :foreground "red")))) ; Used for grep error messages.
+   `(compilation-error ((,class (:foreground "red")))) ; Used for grep error messages.
    `(compilation-info ((,class (:weight bold :foreground "#2A489E")))) ; Used for grep hits.
    `(compilation-line-number ((,class (:weight bold :foreground "#A535AE"))))
-   `(compilation-warning ((,class (:weight bold :foreground "orange"))))
+   `(compilation-warning ((,class (:foreground "orange"))))
    `(compilation-mode-line-exit ((,class (:weight bold :foreground "green")))) ; :exit[matched]
    `(compilation-mode-line-fail ((,class (:weight bold :foreground "violet")))) ; :exit[no match]
    `(compilation-mode-line-run ((,class (:weight bold :foreground "orange")))) ; :run
