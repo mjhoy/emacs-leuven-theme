@@ -349,9 +349,9 @@
    `(circe-originator-face ((,class (:foreground "blue"))))
    `(circe-prompt-face ((,class (:foreground "red"))))
    `(circe-server-face ((,class (:foreground "#99CAE5"))))
-   `(comint-highlight-input ((,class (:foreground "#008000" :inherit nil))))
+   `(comint-highlight-input ((,class (:foreground "blue" :inherit nil))))
    ;; `(comint-highlight-prompt ((,class (:weight bold :foreground "black" :background "gold"))))
-   `(comint-highlight-prompt ((,class (:foreground "#008000" :weight bold :inherit nil))))
+   `(comint-highlight-prompt ((,class (:foreground "blue" :weight bold :inherit nil))))
 
    `(ac-candidate-face ((,class (:foreground "#5B6367" :background "lightgray")))) ; popup-face
    `(ac-candidate-mouse-face ((,class (:foreground "white" :background "blue")))) ; popup-menu-mouse-face
