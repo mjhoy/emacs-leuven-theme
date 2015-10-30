@@ -799,6 +799,9 @@
 
    ;; ace-window
    `(aw-leading-char-face ((t (:foreground "white" :background "#2C55B1" :family "Input Sans" :height 3.0))))
+
+   ;; bm
+   `(bm-face ((,class (:background "#CCE7FF"))))
    ))
 
 (custom-theme-set-variables 'matsys
