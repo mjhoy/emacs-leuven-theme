@@ -478,6 +478,8 @@
    `(google-translate-suggestion-label-face ((t (:foreground "red"))))
    `(google-translate-suggestion-face ((t (:slant italic :underline t))))
    `(google-translate-listen-button-face ((t (:height 0.8))))
+
+   ;; helm
    `(helm-action ((,class (:foreground "black"))))
    `(helm-bookmarks-su-face ((,class (:foreground "red"))))
    `(helm-buffer-directory ((,class ,directory)))
@@ -512,12 +514,13 @@
    `(helm-selection ((,class ,volatile-highlight)))
    `(helm-selection-line ((,class ,volatile-highlight)))
    `(helm-separator ((,class (:foreground "red"))))
-   `(helm-source-header ((,class (:family "Sans Serif" :height 1.3 :weight bold :foreground "white" :background "#2F69BF"))))
+   `(helm-source-header ((,class (:family "Input Sans" :height 1.3 :foreground "white" :background "#2F69BF"))))
    `(helm-swoop-target-line-block-face ((,class (:background "#CCCC00" :foreground "#222222"))))
    `(helm-swoop-target-line-face ((,class ,volatile-highlight)))
    `(helm-swoop-target-word-face ((,class (:weight bold :foreground nil :background "#FDBD33"))))
    `(helm-visible-mark ((,class ,marked-line)))
    `(helm-w3m-bookmarks-face ((,class (:underline t :foreground "cyan1"))))
+
    `(highlight-symbol-face ((,class (:background "#FFFFA0"))))
    `(hl-line ((,class ,highlight-line)))
    `(hl-tags-face ((,class (:background "#FEFCAE"))))
