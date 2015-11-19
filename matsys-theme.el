@@ -24,9 +24,6 @@
 
 ;; Requirements: Emacs 24.
 
-;; You may also want to install the Input family of fonts, available
-;; at http://input.fontbureau.com/
-
 ;;; Code:
 
 (deftheme matsys
@@ -53,8 +50,8 @@
       ;; generic colors.
       (cancel '(:slant italic :strike-through t :foreground "#A9A9A9"))
       (clock-line '(:box (:line-width 1 :color "#335EA8") :foreground "black" :background "#EEC900"))
-      (code-block '(:family "Input Mono" :foreground "#000088" :background "#FFFFE0"))
-      (code-inline '(:family "Input Mono" :foreground "#006400" :background "#FDFFF7"))
+      (code-block '(:foreground "#000088" :background "#FFFFE0"))
+      (code-inline '(:foreground "#006400" :background "#FDFFF7"))
       (column '(:height 1.0 :weight normal :slant normal :underline nil :strike-through nil :foreground "#E6AD4F" :background "#FFF2DE"))
       (diff-added '(:foreground "#008000" :background "#DDFFDD"))
       (diff-changed '(:foreground "#0000FF" :background "#DDDDFF"))
@@ -67,31 +64,31 @@
       ;; (highlight-line '(:underline "#FFFF19" :background "#F6FECD"))
       (highlight-line '(:background "#FBFFAD"))
       (link '(:weight normal :underline t :foreground "#006DAF"))
-      (mail-header-name '(:family "Sans Serif" :weight normal :foreground "#A3A3A2"))
-      (mail-header-other '(:family "Sans Serif" :slant normal :foreground "#666666"))
+      (mail-header-name '(:weight normal :foreground "#A3A3A2"))
+      (mail-header-other '(:slant normal :foreground "#666666"))
       (mail-read '(:foreground "#A9A9A9"))
       (mail-read-high '(:foreground "#808080"))
       (mail-ticked '(:foreground "#E92415"))
-      (mail-to '(:family "Input Sans" :underline nil :foreground "#006DAF"))
+      (mail-to '(:underline nil :foreground "#006DAF"))
       (mail-unread '(:foreground "#0077CC" :weight bold :background "#DDDDDD"))
       (mail-unread-high '(:foreground "#135985"))
       (marked-line '(:foreground "#AA0000" :background "#FFAAAA"))
       (match '(:weight bold :background "#FBE448")) ; occur patterns
-      (ol1 '(:family "Input Sans" :height 1.0 :weight bold :overline "#A7A7A7" :foreground "#3C3C3C" :background "#F0F0F0"))
-      (ol2 '(:family "Input Sans" :height 1.0 :overline "#123555" :foreground "#123555" :background "#E5F4FB"))
-      (ol3 '(:family "Input Sans" :height 1.0 :foreground "#005522" :background "#EFFFEF"))
-      (ol4 '(:family "Input Sans" :height 1.0 :slant normal :foreground "#EA6300"))
-      (ol5 '(:family "Input Sans" :height 1.0 :slant normal :foreground "#E3258D"))
-      (ol6 '(:family "Input Sans" :height 1.0 :slant italic :foreground "#0077CC"))
-      (ol7 '(:family "Input Sans" :height 1.0 :slant italic :foreground "#2EAE2C"))
-      (ol8 '(:family "Input Sans" :height 1.0 :slant italic :foreground "#FD8008"))
+      (ol1 '(:height 1.0 :weight bold :overline "#A7A7A7" :foreground "#3C3C3C" :background "#F0F0F0"))
+      (ol2 '(:height 1.0 :overline "#123555" :foreground "#123555" :background "#E5F4FB"))
+      (ol3 '(:height 1.0 :foreground "#005522" :background "#EFFFEF"))
+      (ol4 '(:height 1.0 :slant normal :foreground "#EA6300"))
+      (ol5 '(:height 1.0 :slant normal :foreground "#E3258D"))
+      (ol6 '(:height 1.0 :slant italic :foreground "#0077CC"))
+      (ol7 '(:height 1.0 :slant italic :foreground "#2EAE2C"))
+      (ol8 '(:height 1.0 :slant italic :foreground "#FD8008"))
       ;; (paren-matched '(:background "#99CCFF"))
       (paren-matched '(:background "#E3C414"))
       (paren-unmatched '(:weight bold :underline "red" :foreground "black" :background "#FFDCDC"))
       (region '(:background "#8ED3FF"))
       (shadow '(:foreground "#7F7F7F"))
       (string '(:foreground "#008000")) ; or #D0372D
-      (subject '(:family "Sans Serif" :weight bold :foreground "black"))
+      (subject '(:weight bold :foreground "black"))
       (symlink '(:foreground "#1F8DD6"))
       (tab '(:foreground "#E8E8E8" :background "white"))
       (volatile-highlight '(:underline nil :background "#FFF876")) ; flash-region
@@ -196,15 +193,15 @@
    `(gnus-group-news-6 ((,class (:weight bold :foreground "gray50"))))
    `(gnus-group-news-6-empty ((,class (:foreground "#808080"))))
    `(gnus-header-content ((,class ,mail-header-other)))
-   `(gnus-header-from ((,class (:family "Sans Serif" :foreground "black"))))
+   `(gnus-header-from ((,class (:foreground "black"))))
    `(gnus-header-name ((,class ,mail-header-name)))
-   `(gnus-header-newsgroups ((,class (:family "Sans Serif" :foreground "#3399CC"))))
+   `(gnus-header-newsgroups ((,class (:foreground "#3399CC"))))
    `(gnus-header-subject ((,class ,subject)))
    `(gnus-picon ((,class (:foreground "yellow" :background "white"))))
    `(gnus-picon-xbm ((,class (:foreground "yellow" :background "white"))))
    `(gnus-server-closed ((,class (:slant italic :foreground "blue" :background "white"))))
    `(gnus-server-denied ((,class (:weight bold :foreground "red" :background "white"))))
-   `(gnus-server-opened ((,class (:family "Sans Serif" :foreground "white" :foreground "#466BD7"))))
+   `(gnus-server-opened ((,class (:foreground "white" :foreground "#466BD7"))))
    `(gnus-signature ((,class (:slant italic :foreground "#8B8D8E"))))
    `(gnus-splash ((,class (:foreground "#FF8C00"))))
    `(gnus-summary-cancelled ((,class ,cancel)))
@@ -226,9 +223,9 @@
    ;; mu4e
    `(mu4e-unread-face ((,class ,mail-unread)))
    `(mu4e-replied-face ((,class (:foreground "#777777" :slant italic))))
-   `(mu4e-header-key-face ((,class (:family "Input Mono" :foreground "#888888"))))
-   `(mu4e-header-value-face ((,class (:family "Input Mono" :foreground "#000000"))))
-   `(mu4e-contact-face ((,class (:family "Input Mono" :foreground "#006DAF"))))
+   `(mu4e-header-key-face ((,class (:foreground "#888888"))))
+   `(mu4e-header-value-face ((,class (:foreground "#000000"))))
+   `(mu4e-contact-face ((,class (:foreground "#006DAF"))))
 
    ;; Message faces.
    `(message-header-name ((,class ,mail-header-name)))
@@ -237,8 +234,8 @@
    `(message-header-subject ((,class ,subject)))
    `(message-header-to ((,class ,mail-to)))
    `(message-cited-text ((,class (:foreground "#5050B0"))))
-   `(message-separator ((,class (:family "Sans Serif" :weight normal :foreground "#BDC2C6"))))
-   `(message-header-newsgroups ((,class (:family "Sans Serif" :foreground "#3399CC"))))
+   `(message-separator ((,class (:weight normal :foreground "#BDC2C6"))))
+   `(message-header-newsgroups ((,class (:foreground "#3399CC"))))
    `(message-header-xheader ((,class ,mail-header-other)))
    `(message-mml ((,class (:foreground "forest green"))))
 
@@ -388,9 +385,9 @@
    `(custom-comment ((,class (:background "gray85"))))
    `(custom-comment-tag ((,class (:foreground "blue4"))))
    `(custom-documentation ((,class (nil))))
-   `(custom-face-tag ((,class (:family "Sans Serif" :height 1.2 :weight bold))))
+   `(custom-face-tag ((,class (:height 1.2 :weight bold))))
    `(custom-group-tag ((,class (:height 1.2 :weight bold :foreground "blue1"))))
-   `(custom-group-tag-1 ((,class (:family "Sans Serif" :height 1.2 :weight bold :foreground "red1"))))
+   `(custom-group-tag-1 ((,class (:height 1.2 :weight bold :foreground "red1"))))
    `(custom-invalid ((,class (:foreground "yellow" :background "red"))))
    `(custom-link ((,class (:underline t :foreground "blue1"))))
    `(custom-modified ((,class (:foreground "white" :background "blue"))))
@@ -400,7 +397,7 @@
    `(custom-state ((,class (:foreground "green4"))))
    `(custom-themed ((,class (:foreground "white" :background "blue1"))))
    `(custom-variable-button ((,class (:weight bold :underline t))))
-   `(custom-variable-tag ((,class (:family "Sans Serif" :height 1.2 :weight bold :foreground "blue1"))))
+   `(custom-variable-tag ((,class (:height 1.2 :weight bold :foreground "blue1"))))
    `(custom-visibility ((,class ,link)))
    `(diff-hl-change ((,class (:foreground "blue3" :inherit diff-changed))))
    `(diff-hl-delete ((,class (:foreground "red3" :inherit diff-removed))))
@@ -462,7 +459,7 @@
    `(fancy-narrow-blocked-face ((,class (:foreground "red"))))
    `(font-latex-italic-face ((,class (:slant italic :foreground "#1A1A1A"))))
    `(font-latex-math-face ((,class (:foreground "blue"))))
-   `(font-latex-sectioning-1-face ((,class (:family "Sans Serif" :height 2.7 :weight bold :foreground "cornflower blue"))))
+   `(font-latex-sectioning-1-face ((,class (:height 2.7 :weight bold :foreground "cornflower blue"))))
    `(font-latex-sectioning-2-face ((,class ,ol1)))
    `(font-latex-sectioning-3-face ((,class ,ol2)))
    `(font-latex-sectioning-4-face ((,class ,ol3)))
@@ -514,7 +511,7 @@
    `(helm-selection ((,class ,volatile-highlight)))
    `(helm-selection-line ((,class ,volatile-highlight)))
    `(helm-separator ((,class (:foreground "red"))))
-   `(helm-source-header ((,class (:family "Input Sans" :height 1.3 :foreground "white" :background "#2F69BF"))))
+   `(helm-source-header ((,class (:height 1.3 :foreground "white" :background "#2F69BF"))))
    `(helm-swoop-target-line-block-face ((,class (:background "#CCCC00" :foreground "#222222"))))
    `(helm-swoop-target-line-face ((,class ,volatile-highlight)))
    `(helm-swoop-target-word-face ((,class (:weight bold :foreground nil :background "#FDBD33"))))
@@ -535,7 +532,7 @@
    `(ilog-load-face ((,class (:foreground "#BA36A5"))))
    `(ilog-message-face ((,class (:foreground "#808080"))))
    `(indent-guide-face ((,class (:foreground "#D3D3D3"))))
-   `(info-file ((,class (:family "Sans Serif" :height 1.8 :weight bold :box (:line-width 1 :color "#0000CC") :foreground "cornflower blue" :background "LightSteelBlue1"))))
+   `(info-file ((,class (:height 1.8 :weight bold :box (:line-width 1 :color "#0000CC") :foreground "cornflower blue" :background "LightSteelBlue1"))))
    `(info-header-node ((,class (:underline t :foreground "orange")))) ; nodes in header
    `(info-header-xref ((,class (:underline t :foreground "dodger blue")))) ; cross references in header
    `(info-index-match ((,class (:weight bold :foreground nil :background "#FDBD33")))) ; when using `i'
@@ -566,7 +563,7 @@
    `(magit-item-mark ((,class ,marked-line)))
    `(magit-log-head-label ((,class (:box (:line-width 1 :color "blue" :style nil)))))
    `(magit-log-tag-label ((,class (:box (:line-width 1 :color "#00CC00" :style nil)))))
-   `(magit-section-title ((,class (:family "Sans Serif" :height 1.8 :weight bold :foreground "cornflower blue" :inherit nil))))
+   `(magit-section-title ((,class (:height 1.8 :weight bold :foreground "cornflower blue" :inherit nil))))
    `(makefile-space-face ((,class (:background "hot pink"))))
    `(makefile-targets ((,class (:weight bold :foreground "blue"))))
    ;; `(markdown-blockquote-face ((,class ())))
@@ -628,7 +625,7 @@
    `(org-agenda-filter-category ((,class (:weight bold :foreground "orange"))))
    `(org-agenda-filter-tags ((,class (:weight bold :foreground "orange"))))
    `(org-agenda-restriction-lock ((,class (:background "#E77D63"))))
-   `(org-agenda-structure ((,class (:height 1.3 :family "Input Sans" :foreground "#1F8DD6"))))
+   `(org-agenda-structure ((,class (:height 1.3 :foreground "#1F8DD6"))))
    `(org-archived ((,class (:foreground "gray70"))))
    `(org-beamer-tag ((,class (:box (:line-width 1 :color "#FABC18") :foreground "#2C2C2C" :background "#FFF8D0"))))
    `(org-block ((,class ,code-block)))
@@ -645,7 +642,7 @@
    `(org-dim ((,class (:foreground "#AAAAAA"))))
    `(org-document-info ((,class (:foreground "#484848"))))
    `(org-document-info-keyword ((,class (:foreground "#008ED1"))))
-   `(org-document-title ((,class (:family "Input Serif" :height 1.8 :foreground "black"))))
+   `(org-document-title ((,class (:height 1.8 :foreground "black"))))
    `(org-done ((,class (:weight bold :box (:line-width 1 :color "#BBBBBB") :foreground "#BBBBBB" :background "#EAFFEA"))))
    `(org-drawer ((,class (:foreground "light sky blue"))))
    `(org-ellipsis ((,class (:underline nil :box (:line-width 1 :color "#999999") :foreground "#999999" :background "#FFF8C0")))) ; #FFEE62
@@ -801,7 +798,7 @@
    `(yas/field-highlight-face ((,class (:background "DarkSeaGreen1"))))
 
    ;; ace-window
-   `(aw-leading-char-face ((t (:foreground "white" :background "#2C55B1" :family "Input Sans" :height 3.0))))
+   `(aw-leading-char-face ((t (:foreground "white" :background "#2C55B1" :height 3.0))))
 
    ;; bm
    `(bm-face ((,class (:background "#CCE7FF"))))

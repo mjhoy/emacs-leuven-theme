@@ -4,8 +4,6 @@
 
 My personal fork the the [[https://github.com/fniessen/emacs-leuven-theme][emacs "leuven" theme]].
 
-There will be references to the [[http://input.fontbureau.com/][Input]] font family.
-
 [[./images/matsys.png]]
 
 * matsys? --A painter from Leuven.
