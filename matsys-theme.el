@@ -802,6 +802,9 @@
 
    ;; bm
    `(bm-face ((,class (:background "#CCE7FF"))))
+
+   ;; web-mode
+   `(web-mode-symbol-face ((,class (:foreground "purple"))))
    ))
 
 (custom-theme-set-variables 'matsys
